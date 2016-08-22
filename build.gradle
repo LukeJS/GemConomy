@@ -1,0 +1,20 @@
+plugins {
+    id 'org.spongepowered.plugin' version '0.6'
+}
+
+group = 'me.nentify.gemconomy'
+version = '0.0.1'
+description = 'Sell gems'
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile 'org.spongepowered:spongeapi:5.0.0-SNAPSHOT'
+    compile 'com.zaxxer:HikariCP:2.4.3'
+
+    compile files('./libs/griefprevention-1.10.2-2.1.0.62.jar')
+}
